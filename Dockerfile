@@ -23,3 +23,6 @@ RUN docker-php-ext-configure sybase_ct --with-sybase-ct=/usr \
 # Add php5-xdebug
 RUN pecl install xdebug-2.5.5 \
     && docker-php-ext-enable xdebug
+	
+# Add php5-pcntl
+RUN docker-php-ext-install pcntl	
