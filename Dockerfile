@@ -26,3 +26,6 @@ RUN pecl install xdebug-2.5.5 \
 	
 # Add php5-pcntl
 RUN docker-php-ext-install pcntl	
+
+# Add php5-pdo-mysql
+RUN docker-php-ext-install pdo pdo_mysql
